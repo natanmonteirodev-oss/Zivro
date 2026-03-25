@@ -44,6 +44,21 @@ public class ZivroDbContext : DbContext
     public DbSet<TwoFactorAuth> TwoFactorAuths { get; set; } = null!;
 
     /// <summary>
+    /// DbSet for ExternalLogin entities.
+    /// </summary>
+    public DbSet<ExternalLogin> ExternalLogins { get; set; } = null!;
+
+    /// <summary>
+    /// DbSet for PasswordReset entities.
+    /// </summary>
+    public DbSet<PasswordReset> PasswordResets { get; set; } = null!;
+
+    /// <summary>
+    /// DbSet for SuspiciousLogin entities.
+    /// </summary>
+    public DbSet<SuspiciousLogin> SuspiciousLogins { get; set; } = null!;
+
+    /// <summary>
     /// Configures the database schema and entity mappings.
     /// </summary>
     protected override void OnModelCreating(ModelBuilder modelBuilder)

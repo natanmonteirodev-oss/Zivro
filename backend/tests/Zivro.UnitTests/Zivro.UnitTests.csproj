@@ -16,11 +16,13 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Moq" Version="4.20.70" />
+    <PackageReference Include="FluentAssertions" Version="6.12.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="../../src/Zivro.Application/Zivro.Application.csproj" />
     <ProjectReference Include="../../src/Zivro.Domain/Zivro.Domain.csproj" />
+    <ProjectReference Include="../../src/Zivro.Infrastructure/Zivro.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
