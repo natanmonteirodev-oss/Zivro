@@ -1,0 +1,34 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=YOUR_SERVER;Database=YOUR_DATABASE;User Id=YOUR_USER;Password=YOUR_PASSWORD;TrustServerCertificate=true;"
+  },
+  "JWT": {
+    "SecretKey": "REPLACE_WITH_STRONG_256_BIT_SECRET_KEY_MIN_32_CHARACTERS",
+    "Issuer": "Zivro.API",
+    "Audience": "Zivro.App",
+    "AccessTokenExpirationMinutes": 15,
+    "RefreshTokenExpirationDays": 7
+  },
+  "RateLimiting": {
+    "RegisterLimitPerHour": 5,
+    "LoginLimitPerHour": 10,
+    "VerifyEmailLimitPerHour": 20
+  },
+  "Email": {
+    "SenderEmail": "noreply@zivro.com",
+    "SenderName": "Zivro Platform",
+    "SmtpHost": "localhost",
+    "SmtpPort": 587,
+    "SmtpUsername": "YOUR_EMAIL@GMAIL.COM",
+    "SmtpPassword": "YOUR_APP_PASSWORD",
+    "UseSSL": true
+  }
+}
