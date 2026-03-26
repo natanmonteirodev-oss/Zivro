@@ -112,29 +112,71 @@ dotnet ef database update -p Zivro.Infrastructure -s Zivro.Api
 
 ## Tecnologias
 
-- React
-- Fetch API
-- TailwindCSS (UI base)
+- **React 18** - UI framework
+- **TypeScript** - Type safety
+- **Vite** - Build tool otimizado
+- **React Router v6** - Roteamento
+- **Zustand** - State management
+- **Axios** - HTTP client
+- **React Hook Form** - Gerenciamento de forms
+- **Tailwind CSS** - Estilização
 
 ## Estrutura
 
 ```
-
 frontend/src/
-├── app/
-├── components/
-├── features/
-│   └── expenses/
-├── services/
-├── pages/
-
+├── app/                    # App raiz
+├── components/             # Componentes reutilizáveis
+├── features/               # Funcionalidades (modular)
+├── hooks/                  # Custom hooks
+├── pages/                  # Páginas/Rotas
+├── services/               # Serviços API
+├── store/                  # State global (Zustand)
+├── styles/                 # Estilos globais
+├── types/                  # Tipos TypeScript
+├── utils/                  # Utilitários
+├── config/                 # Configurações
+├── main.tsx                # Entry point
+└── App.tsx                 # Root component
 ```
 
-## Funcionalidades
+## Funcionalidades Implementadas ✅
 
-- Listagem de gastos
-- Criação de gastos
-- Integração com API
+### Autenticação Completa
+- ✅ Login com email/senha
+- ✅ Registro de novo usuário
+- ✅ Validação de formulários em tempo real
+- ✅ Indicador de força de senha
+- ✅ JWT token management
+- ✅ Refresh token automático
+- ✅ Logout seguro
+- ✅ Roteamento protegido
+
+### UI/UX
+- ✅ 10+ componentes reutilizáveis
+- ✅ Design responsivo (mobile-first)
+- ✅ Tema customizado com Tailwind
+- ✅ States de loading
+- ✅ Tratamento de erros
+- ✅ Alerts inteligentes
+- ✅ Form validation
+- ✅ Dashboard com estatísticas
+
+### Segurança
+- ✅ Token JWT na localStorage
+- ✅ Headers de autorização automáticos
+- ✅ Interceptador Axios para auto-refresh
+- ✅ Proteção de rotas (ProtectedRoute)
+- ✅ Cleanup de tokens
+- ✅ Validação de inputs
+
+## Páginas Disponíveis
+
+| Página | Rota | Status | Autenticada |
+|--------|------|--------|-------------|
+| Login | `/login` | ✅ Implementada | Não |
+| Register | `/register` | ✅ Implementada | Não |
+| Home/Dashboard | `/` | ✅ Implementada | Sim |
 
 ---
 

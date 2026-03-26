@@ -1,0 +1,5 @@
+# .env.local
+
+# Define seu arquivo local com as variáveis de ambiente
+VITE_API_URL=https://localhost:5001/api
+VITE_APP_NAME=Zivro
